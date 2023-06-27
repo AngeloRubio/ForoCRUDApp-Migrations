@@ -8,7 +8,7 @@ class Program
         //agregarEstudiante();
         //consultarEstudiantes();
         //consultarEstudiante();
-        //modificarEstudiante();
+        modificarEstudiante();
         //eliminarEstudiante();
         consultarEstudiantesFunciones();
     }
@@ -16,6 +16,8 @@ class Program
     //agregar estudiante
     public static void agregarEstudiante()
     {
+        AplicationDbContext context = new AplicationDbContext();
+
         Console.WriteLine("Metodo agregar estudiante");
         SchoolContext context = new SchoolContext();
         Student std = new Student();
